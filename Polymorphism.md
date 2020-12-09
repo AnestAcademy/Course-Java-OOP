@@ -4,7 +4,11 @@
 **Tính đa hình** là khả năng một đối tượng có thể thực hiện một tác vụ theo nhiều cách khác nhau.  
 Trong Java, chúng ta sử dụng nạp chồng phương thức (method overloading) và ghi đè phương thức (method overriding) để có tính đa hình.
 
+<br />
+
 ## I. Overload
+
+<br />
 
 ## II. Override (ghi đè)
 
