@@ -1,13 +1,29 @@
 # Tính đa hình (Polymorphism)
 
 **Tính đa hình (polymorphism)** là một trong bốn tính chất cơ bản của lập trình hướng đối tượng trong Java.  
-**Tính đa hình** là khả năng một đối tượng có thể thực hiện một tác vụ theo nhiều cách khác nhau.  
+**Tính đa hình** là khả năng một đối tượng có thể thực hiện một tác vụ theo nhiều cách khác nhau.
+
 Đối với tính chất này, nó được thể hiện rõ nhất qua việc gọi phương thức của đối tượng. Các phương thức hoàn toàn có thể giống nhau, nhưng việc xử lý luồng có thể khác nhau.  
 Trong Java, chúng ta sử dụng nạp chồng phương thức (method overloading) và ghi đè phương thức (method overriding) để có tính đa hình.
 
 <br />
 
-## I. Overload
+## I. Overload (nạp chồng)
+
+### 1. Khái niệm
+
+Đây là khả năng cho phép một lớp có nhiều thuộc tính, phương thức cùng tên nhưng với các tham số khác nhau về loại cũng như về số lượng. Khi được gọi, dựa vào tham số truyền vào, phương thức tương ứng sẽ được thực hiện.
+
+### 2. Các quy tắc cho việc Override
+
+- Các method nằm trong cùng một class.
+- Các method trùng tên.
+- Các method khác số lượng tham số, nếu có cùng số lượng tham số thì các tham số phải khác kiểu dữ liệu.
+
+#### Lưu ý:
+
+- Trong Java, chúng ta không thể thực hiện nạp chồng phương thức chỉ bằng cách thay đổi kiểu trả về của phương thức đó.
+- Hàm tạo cũng có thể được nạp chồng.
 
 <br />
 
