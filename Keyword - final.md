@@ -26,6 +26,17 @@ public class SampleClass {
 }
 ```
 
+```java
+public class SampleClass {
+
+    final int MAX_SPEED; //blank final variable
+
+    {
+        MAX_SPEED = 80;
+    }
+}
+```
+
 <br />
 
 ## II. Final parameters
