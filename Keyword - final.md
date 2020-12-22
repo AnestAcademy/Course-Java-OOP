@@ -28,6 +28,8 @@ public class SampleClass {
 }
 ```
 
+<br />
+
 Ví dụ **blank final variable**:
 
 ```java
