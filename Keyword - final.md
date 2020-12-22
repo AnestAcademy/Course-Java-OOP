@@ -15,6 +15,8 @@ Từ khóa **final** trong Java được sử dụng để hạn chế người 
 
 Nếu một biến được khai báo với từ khóa **final** thì giá trị của nó không thể thay đổi sau khi khởi tạo. *Lưu ý rằng biến không nhất thiết phải được khởi tạo tại thời điểm khai báo*. Nếu nó được khai báo nhưng chưa được khởi tạo, nó được gọi là **blank final variable**.
 
+Ví dụ khi gán giá trị mới cho một biến **final** - chương trình sẽ báo lỗi:
+
 ```java
 public class SampleClass {
 
@@ -25,6 +27,8 @@ public class SampleClass {
     }
 }
 ```
+
+Ví dụ **blank final variable**:
 
 ```java
 public class SampleClass {
@@ -42,6 +46,8 @@ public class SampleClass {
 ## II. Final parameters
 
 Nếu bạn thấy từ khóa **final** sử dụng cho biến tham số, điều đó có nghĩa là giá trị của biến này không thể thay đổi ở bất kỳ đâu trong hàm.
+
+Ví dụ khi gán giá trị mới cho một biến tham số **final** - chương trình sẽ báo lỗi:
 
 ```java
 public class SampleClass {
@@ -69,6 +75,9 @@ Một class được khai báo là **final** thì nó không thể được kế
 public final class FinalClass {
 }
 ```
+
+<br />
+
 ```java
 public class SubClass extends FinalClass { //throws an error
 }
