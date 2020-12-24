@@ -43,4 +43,13 @@ Trong Java, chúng ta sử dụng nạp chồng phương thức (method overload
 - Phải là quan hệ IS-A (kế thừa).
 - Access modifier của phương thức ghi đè phải giống hoặc lớn hơn phạm vi của access modifier phương thức được ghi đè của class cha.
   - Ví dụ chúng ta không thể ghi đè một phương thức **public** bằng một phương thức **private**. Nếu không, tình huống xảy ra là một lời gọi phương thức đã được trình biên dịch chấp nhận vì tưởng là phương thức **public** nhưng đến khi nó chạy lại bị máy ảo từ chối vì phiên bản được gọi lại là **private**.
-- Các phương thức **final**, **static**, **private** không thể cài đè.
+- Các phương thức **final**, **static**, **private** không thể ghi đè.
+
+<br />
+
+##  
+
+© Copyright
+> ANEST LEARNING  
+> Join us: &nbsp;&nbsp;&nbsp; [Facebook groups](https://www.facebook.com/groups/anest.learning/)  
+> Website: &nbsp; [https://anest.dev](https://anest.dev)  
