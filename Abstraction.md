@@ -47,7 +47,7 @@ public abstract class Person {
 Nếu chúng ta khởi tạo instance từ class **Person** thì sẽ báo lỗi:
 
 ```java
-public class SampleClass {
+public class Main {
 
     public static void main(String[] args) {
 
