@@ -5,10 +5,10 @@
 **Tính đa hình (polymorphism)** là một trong bốn tính chất cơ bản của lập trình hướng đối tượng trong Java.  
 **Tính đa hình** là khả năng các đối tượng thuộc các lớp khác nhau có thể hiểu - thực hiện một tác vụ - thông điệp theo các cách khác nhau.
 
-Một ví dụ về đa hình trong thực tế. Ta có 3 con vật: chó, mèo, lợn. Cả 3 con vật này đều là động vật. Nhưng khi ta bảo cả 3 động vật kêu thì con chó sẽ kêu **gâu gâu**, con mèo sẽ kêu **meo meo** và con lợn sẽ kêu **ẹt ẹt**.
+Một ví dụ về đa hình trong thực tế. Ta có 3 con vật: chó, mèo, lợn. Cả 3 con vật này đều là động vật. Nhưng khi ta bảo cả 3 động vật kêu thì con chó sẽ kêu **gâu gâu**, con mèo sẽ kêu **meo meo** và con lợn sẽ kêu **ẹt ẹt**.  
 Trong ví dụ trên 3 con vật: chó, mèo, lợn xem như là các đối tượng. Việc ta bảo 3 động vật kêu chính là thông điệp. Rõ ràng cả 3 con vật có thể hiểu cùng 1 thông điệp là phải kêu nhưng mỗi con lại kêu theo các cách khác nhau.
 
-Đối với tính chất này, nó được thể hiện rõ nhất qua việc gọi phương thức của đối tượng. Các phương thức hoàn toàn có thể giống nhau, nhưng việc xử lý luồng có thể khác nhau.
+Đối với tính chất này trong lập trình, nó được thể hiện rõ nhất qua việc gọi phương thức của đối tượng. Các phương thức hoàn toàn có thể giống nhau về Method Signature, nhưng việc xử lý bên trong method có thể khác nhau tùy vào đối tượng.
 
 Trong Java, chúng ta sử dụng nạp chồng phương thức (method overloading) và ghi đè phương thức (method overriding) để có tính đa hình.
 
