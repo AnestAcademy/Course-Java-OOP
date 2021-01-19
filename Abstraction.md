@@ -17,9 +17,9 @@ Lớp trừu tượng là lớp được khai báo mà **không thể tạo ra �
 
 Mục đích lớp trừu tượng là tạo ra lớp chung cho những lớp có liên quan với nhau kế thừa.
 
-Ví dụ trong dự án đang thực hiện của chúng ta, những lớp `Student`, `Staff`... có những thuộc tính và phương thức chung như tên, năm sinh, quê quán... thì ta sẽ tạo một lớp `Person` là lớp chứa những đặc điểm chung đó và cho lớp `Student`, `Staff` kế thừa lớp `Person`. Nhưng trong thực tế chúng ta sẽ không bao giờ cần tạo đối tượng từ lớp `Person` (`new Person()`) vì các đối tượng làm việc chính trong dự án là `Student` và `Staff`. Vì vậy khi phát triển chương trình, ta chỉ cần tạo các đối tượng từ lớp con kế thừa và không cho tạo đối tượng từ lớp `Person` bằng cách biến lớp `Person` thành lớp trừu tượng.
+Ví dụ trong dự án đang thực hiện của chúng ta, những lớp **Student**, **Staff**... có những thuộc tính và phương thức chung như tên, năm sinh, quê quán... thì ta sẽ tạo một lớp **Person** là lớp chứa những đặc điểm chung đó và cho lớp **Student**, **Staff** kế thừa lớp **Person**. Nhưng trong thực tế chúng ta sẽ không bao giờ cần tạo đối tượng từ lớp **Person** (`new Person()`) vì các đối tượng làm việc chính trong dự án là **Student** và **Staff**. Vì vậy khi phát triển chương trình, ta chỉ cần tạo các đối tượng từ lớp con kế thừa và không cho tạo đối tượng từ lớp **Person** bằng cách biến nó thành lớp trừu tượng.
 
-Để tạo lớp trừu tượng ta dùng từ khóa `abstract` trước từ khóa `class`. Ta sẽ dùng lớp `Person` từ những bài trước đó, biến nó thành lớp `abstract`:
+Để tạo lớp trừu tượng ta dùng từ khóa `abstract` trước từ khóa **class**. Ta sẽ dùng lớp **Person** từ những bài trước đó, biến nó thành lớp `abstract`:
 
 ```java
 package entity;
