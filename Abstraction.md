@@ -44,6 +44,20 @@ public abstract class Person {
 
 <br />
 
+Nếu chúng ta khởi tạo instance từ class **Person** thì sẽ báo lỗi:
+
+```java
+public class SampleClass {
+
+    public static void main(String[] args) {
+
+        Person person = new Person();  // error
+    }
+}
+```
+
+<br />
+
 ##  
 
 © Copyright
