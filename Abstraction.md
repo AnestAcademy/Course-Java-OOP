@@ -19,7 +19,32 @@ Mục đích lớp trừu tượng là tạo ra lớp chung cho những lớp c�
 
 Ví dụ khi xây dựng phần mềm quản lý nhà trường: Những lớp sinh viên, giảng viên, cán bộ... có những thuộc tính và phương thức chung như tên, năm sinh, quê quán... thì ta sẽ tạo một lớp con người là lớp trừu tượng và những đặc điểm chung được để trong lớp con người. Khi phát triển chương trình, ta chỉ có thể tạo các đối tượng từ lớp con kế thừa lớp con người, không thể cho tạo đối tượng từ lớp con người được.
 
-Để tạo lớp trừu tượng ta dùng từ khóa `abstract` trước từ khóa `class`.
+Để tạo lớp trừu tượng ta dùng từ khóa `abstract` trước từ khóa `class`. Ta sẽ dùng lớp `Person` từ những bài trước đó, biến nó thành lớp `abstract`:
+
+```java
+package entity;
+
+public abstract class Person {
+
+    private String rollNumber;
+    private String name;
+    private boolean gender;
+    private String dob;
+    private String email;
+    private String mobile;
+    private String address;
+
+    // getter & setter
+    
+    public void display() {
+        //
+    }
+    
+    public void input() {
+        //
+    }
+}
+```
 
 <br />
 
