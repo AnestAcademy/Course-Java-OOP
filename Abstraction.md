@@ -36,13 +36,9 @@ public abstract class Person {
 
     // getter & setter
     
-    public void display() {
-        //
-    }
+    // display
     
-    public void input() {
-        //
-    }
+    // input
 }
 ```
 
