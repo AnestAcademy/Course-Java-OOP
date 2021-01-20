@@ -44,7 +44,7 @@ public abstract class Person {
 
 <br />
 
-### Một số đặc điểm của abstract class:
+### 1. Một số đặc điểm của abstract class:
 
 - Lớp trừu tượng có thể có các method abstract hoặc non-abtract.
 - Lớp trừu tượng có thể khai báo 0, 1 hoặc nhiều abstract method bên trong.
@@ -67,7 +67,7 @@ public class Main {
 
 <br />
 
-## II. Abstract method (Phương thức trừu tượng)
+### 2. Abstract method (Phương thức trừu tượng)
 
 Một phương thức được khai báo là abstract được gọi là phương thức trừu tượng (abstract method).
 
@@ -80,7 +80,7 @@ public abstract void display();
 
 <br />
 
-## III. Ví dụ về Abstract class và Abstract method
+### 3. Ví dụ về Abstract class và Abstract method
 
 Ví dụ: Viết chương trình vẽ một hình bất kỳ sao cho cách sử dụng - vẽ là giống nhau, bất kể đó là hình gì với màu đỏ. Hình đó có thể là hình chữ nhật (rectangle), hình tròn (circle), tam giác (triangle)...
 
@@ -173,13 +173,13 @@ Draw red circle
 
 <br />
 
-## IV. Interface
+## II. Interface
 
 Trong Java, Interface (giao diện) là một kiểu dữ liệu tham chiếu tương tự như Class (lớp) nhưng chỉ có thể chứa hằng số và tên các abstract methods (phương thức trừu tượng).
 
 Một lớp mô tả các thuộc tính và hành vi của một đối tượng. Một interface chứa các hành vi mà một class triển khai.
 
-### Đặc điểm của Interface
+### 1. Đặc điểm của Interface
 
 - Interface là một kỹ thuật để thu được tính trừu tượng hoàn toàn và **đa kế thừa** trong Java.
 - Interface luôn luôn có modifier là: **_public interface_**, cho dù bạn có khai báo rõ hay không.
@@ -194,13 +194,13 @@ Một lớp mô tả các thuộc tính và hành vi của một đối tượng
 
 <br />
 
-### Một interface tương tự với một class bởi những điểm sau đây:
+### 2. Một interface tương tự với một class bởi những điểm sau đây:
 
 - Một interface được viết trong một file với định dạng `.java`, với tên của interface giống tên của file.
 - Bytecode của interface được lưu trong file có định dạng `.class`.
 - Khai báo interface trong một **package**, những file bytecode tương ứng cũng có cấu trúc thư mục có cùng tên package.
 
-### Một interface khác với một class ở một số điểm sau đây:
+### 3. Một interface khác với một class ở một số điểm sau đây:
 
 - Bạn không thể khởi tạo một interface.
 - Một interface không chứa bất cứ hàm Contructor nào.
@@ -208,6 +208,8 @@ Một lớp mô tả các thuộc tính và hành vi của một đối tượng
 - Một interface không thể chứa một trường (field) nào trừ các trường **_static final_**.
 - Một interface không thể kế thừa từ lớp, nó được triển khai (implements) bởi một lớp.
 - Một interface có thể kế thừa từ nhiều interface khác.
+
+### 4. Ví dụ sử dụng Interface
 
 <br />
 
