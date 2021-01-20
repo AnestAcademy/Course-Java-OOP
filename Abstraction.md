@@ -292,13 +292,15 @@ Draw red circle
 
 ## III. So sánh abstract class và interface trong Java
 
+<br />
+
 | Lớp trừu tượng (abstract class) | Interface |
 | --- | --- |
 | Thể hiện tính trừu tượng < 100%. |	Thể hiện tính trừu tượng 100% (Java < 8). |
-| Lớp trừu tượng có thể có các phương thức abstract và non-abstract | Phiên bản Java < 8, Interface chỉ có thể có phương thức abstract. <br />Phiên bản Java 8, có thể thêm default và static methods. <br />Phiên bản Java 9, có thể thêm private methods. |
-| Lớp trừu tượng **không** hỗ trợ đa kế thừa. | Interface **hỗ trợ đa kế thừa**. |
+| Lớp trừu tượng có thể có các phương thức **_abstract_** và **_non-abstract_** | Phiên bản Java < 8, Interface chỉ có thể có phương thức **_abstract_**. <br />Phiên bản Java 8, có thể thêm **_default_** và **_static methods_**. <br />Phiên bản Java 9, có thể thêm **_private methods_**. |
+| Lớp trừu tượng **_không_** hỗ trợ đa kế thừa. | Interface **_hỗ trợ_** đa kế thừa. |
 | Lớp trừu tượng có thể có các biến **_final_**, **_non-final_**, **_static_** và **_non-static_**. | Interface chỉ có các biến **_static final_**. |
-| Lớp trừu tượng có thể có phương thức static, phương thức main và constructor. | Interface không thể có phương thức static, main hoặc constructor. |
+| Lớp trừu tượng có thể có phương thức **_static_**, phương thức **_main_** và **_constructor_**. | Interface không thể có phương thức **_static_**, **_main_** hoặc **_constructor_**. |
 | Từ khóa abstract được sử dụng để khai báo lớp trừu tượng. | Từ khóa interface được sử dụng để khai báo Interface. |
 | Lớp trừu tượng có thể cung cấp trình triển khai của Interface | Interface không cung cấp trình triển khai cụ thể của lớp abstract. |
 | Sử dụng Abstract class khi chúng ta chỉ có thể hoàn thành một vài chức năng (method/function) chuẩn của hệ thống, một vài chức năng còn lại các lớp con **extends** sẽ phải hoàn thành. Những tính năng đã hoàn thành này vẫn sử dụng như bình thường, đây là những tính năng chung. | Sử dụng Interface khi bạn muốn tạo dựng một bộ khung chuẩn gồm các chức năng (method/function) mà tất cả module/project cần phải có. Các module phải **implements** tất cả chức năng đã được định nghĩa. |
@@ -309,7 +311,7 @@ Nói về Abtract Class và Interface, đôi khi bạn sẽ gặp một số cá
 - Khi một class extend một class/ abtract class thì có nghĩa là ta đang thể hiện mối quan hệ **is-a** (là)
 - Khi implement một interface, thì ta đang thể hiện mối quan hệ **has-a** (có, hay thực hiện).
 
-``java
+```java
 // Programmer là Person, thực hiện việc Programming, Debugging
  
 class Programmer extends Person implements Programming, Debugging {}
