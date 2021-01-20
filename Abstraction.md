@@ -282,6 +282,14 @@ Draw red circle
 
 <br />
 
+### 5. Khi triển khai interface, có vài quy tắc sau:
+
+- Một lớp có thể triển khai một hoặc nhiều interface tại một thời điểm.
+- Một lớp chỉ có thể kế thừa một lớp khác, nhưng được triển khai nhiều interface.
+- Một interface có thể kế thừa từ một interface khác, tương tự cách một lớp có thể kế thừa lớp khác.
+
+<br />
+
 ##  
 
 © Copyright
