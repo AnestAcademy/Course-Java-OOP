@@ -200,6 +200,8 @@ Một lớp mô tả các thuộc tính và hành vi của một đối tượng
 - Bytecode của interface được lưu trong file có định dạng `.class`.
 - Khai báo interface trong một **package**, những file bytecode tương ứng cũng có cấu trúc thư mục có cùng tên package.
 
+<br />
+
 ### 3. Một interface khác với một class ở một số điểm sau đây:
 
 - Bạn không thể khởi tạo một interface.
@@ -209,7 +211,74 @@ Một lớp mô tả các thuộc tính và hành vi của một đối tượng
 - Một interface không thể kế thừa từ lớp, nó được triển khai (implements) bởi một lớp.
 - Một interface có thể kế thừa từ nhiều interface khác.
 
+<br />
+
 ### 4. Ví dụ sử dụng Interface
+
+Tương tự như yêu cầu ở ví dụ về sử dụng abstract class ở trên, nhưng chúng ta sẽ dụng Interface để áp dụng vào chương trình.
+
+Vì các đặc điểm của Interface nên giờ đây chúng ta chỉ cần viết lại ngắn gọn như sau:
+
+**Shape.java**
+```java
+public interface Shape {
+     
+    String color = "red";
+     
+    void draw();     
+}
+```
+
+<br />
+
+Vì dùng Interfave nên chúng ta sẽ kế thừa bằng từ khóa **implements** (triển khai), không dùng từ khóa **extends**.
+
+**Rectangle.java**
+```java
+public class Rectangle implements Shape {
+ 
+    @Override
+    public void draw() {
+        System.out.println("Draw " + color + " rectangle");
+    }   
+}
+```
+
+**Circle.java**
+```java
+public class Circle implements Shape {
+ 
+    @Override
+    public void draw() {
+        System.out.println("Draw " + color + " circle");
+    }    
+}
+```
+
+<br />
+
+Class **ShapeApp** chúng ta không thay đổi gì:
+
+**ShapeApp.java**
+```java
+public class ShapeApp {
+
+    public static void main(String[] args) {
+        Shape rect = new Rectangle();
+        rect.draw();
+        System.out.println("---");
+        Shape circle = new Circle();
+        circle.draw();      
+    }
+}
+```
+
+Kết quả nhận được:
+```java
+Draw red rectangle
+---
+Draw red circle
+```
 
 <br />
 
