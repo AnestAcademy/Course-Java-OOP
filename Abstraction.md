@@ -88,6 +88,8 @@ Với yêu cầu trên, chúng ta sẽ tạo một lớp trừu tượng **Shape
 - Vì mỗi hình sẽ có cách vẽ cụ thể riêng nên chúng ta sẽ chỉ cần định nghĩa phương thức `draw()` mà chưa cần triển khai vẽ như thế nào => `draw()` sẽ là abstract method
 - Tất cả các hình đều có cùng cách sử dụng (draw) vì các class con sẽ kế thừa class **Shape**, nên cũng sẽ kế thừa method `draw()`
 
+<br />
+
 **Shape.java**
 ```java
 public abstract class Shape {
@@ -100,6 +102,8 @@ public abstract class Shape {
     public abstract void draw();
 }
 ```
+
+<br />
 
 Ngoài ra, chúng ta cũng cần có phương thức không trừu tượng `getColor()` để cung cấp màu sử dụng chung cho tất cả các hình (vì yêu cầu tất cả cách hình có màu đỏ nên method này có thể triển khai luôn được code). 
 
@@ -120,7 +124,56 @@ public abstract class Shape {
 }
 ```
 
-Tiếp theo, tôi tạo 2 lớp Rectangle và Circle kế thừa từ lớp Shape, 2 lớp này có những cách xử lý draw khác nhau. Cuối cùng, tôi tạo class ShapeApp, gọi phương thức draw để vẽ hình theo yêu cầu.
+<br />
+
+Tiếp theo, chúng ta tạo 2 lớp **Rectangle** và **Circle** kế thừa từ lớp **Shape**, 2 lớp này sẽ có những cách xử lý `draw()` khác nhau cụ thể để có thể vẽ ra cho đúng hình. 
+
+**Rectangle.java**
+```java
+public class Rectangle extends Shape {
+ 
+    @Override
+    public void draw() {
+        System.out.println("Draw " + super.getColor() + " rectangle");
+    }
+}
+```
+
+**Circle.java**
+```java
+public class Circle extends Shape {
+ 
+    @Override
+    public void draw() {
+        System.out.println("Draw " + super.getColor() + " circle");
+    } 
+}
+```
+
+<br />
+
+Cuối cùng, tôi tạo class **ShapeApp**, gọi phương thức `draw()` để vẽ hình theo yêu cầu.
+
+**ShapeApp.java**
+```java
+public class ShapeApp {
+
+    public static void main(String[] args) {
+        Shape rect = new Rectangle();
+        rect.draw();
+        System.out.println("---");
+        Shape circle = new Circle();
+        circle.draw();      
+    }
+}
+```
+
+Kết quả nhận dược:
+```java
+Draw red rectangle
+---
+Draw red circle
+```
 
 <br />
 
