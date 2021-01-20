@@ -148,7 +148,7 @@ public class Circle extends Shape {
 
 <br />
 
-Cuối cùng, tôi tạo class **ShapeApp**, gọi phương thức `draw()` để vẽ hình theo yêu cầu.
+Cuối cùng, chúng ta tạo class **ShapeApp**, gọi phương thức `draw()` để vẽ hình theo yêu cầu.
 
 **ShapeApp.java**
 ```java
