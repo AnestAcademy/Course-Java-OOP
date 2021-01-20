@@ -16,17 +16,15 @@ Trong Java, chúng ta sử dụng nạp chồng phương thức (method overload
 
 ## I. Overload (nạp chồng)
 
-### 1. Khái niệm
-
 Đây là khả năng cho phép một lớp có nhiều thuộc tính, phương thức cùng tên nhưng với các tham số khác nhau về loại cũng như về số lượng. Khi được gọi, dựa vào tham số truyền vào, phương thức tương ứng sẽ được thực hiện.
 
-### 2. Các quy tắc cho việc Override
+### Các quy tắc cho việc Override
 
 - Các method nằm trong cùng một class.
 - Các method trùng tên.
 - Các method khác số lượng tham số, nếu có cùng số lượng tham số thì các tham số phải khác kiểu dữ liệu.
 
-#### Lưu ý:
+### Lưu ý:
 
 - Trong Java, chúng ta không thể thực hiện nạp chồng phương thức chỉ bằng cách thay đổi kiểu trả về của phương thức đó.
 - Hàm tạo cũng có thể được nạp chồng.
@@ -35,12 +33,10 @@ Trong Java, chúng ta sử dụng nạp chồng phương thức (method overload
 
 ## II. Override (ghi đè)
 
-### 1. Khái niệm
-
 - **Override** là một tính năng cho phép một lớp con cung cấp một triển khai cụ thể của phương thức đã được cung cấp bởi một trong các lớp cha của nó. Nói dễ hiểu hơn, nếu lớp con có một hoặc nhiều phương thức giống với một trong các lớp cha của nó, thì đó là ghi đè phương thức.
 - **Override** được sử dụng để thu được tính đa hình tại runtime.
 
-### 2. Các quy tắc cho việc Override
+### Các quy tắc cho việc Override
 
 - Override method phải cùng tên với method với class cha.
 - Override method phải có cùng tham số giống với method class cha (số lượng, kiểu dữ liệu, thứ tự).
