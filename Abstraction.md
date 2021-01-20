@@ -88,8 +88,6 @@ Với yêu cầu trên, chúng ta sẽ tạo một lớp trừu tượng **Shape
 - Vì mỗi hình sẽ có cách vẽ cụ thể riêng nên chúng ta sẽ chỉ cần định nghĩa phương thức `draw()` mà chưa cần triển khai vẽ như thế nào => `draw()` sẽ là abstract method
 - Tất cả các hình đều có cùng cách sử dụng (draw) vì các class con sẽ kế thừa class **Shape**, nên cũng sẽ kế thừa method `draw()`
 
-<br />
-
 **Shape.java**
 ```java
 public abstract class Shape {
