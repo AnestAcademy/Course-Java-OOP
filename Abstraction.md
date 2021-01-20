@@ -44,7 +44,14 @@ public abstract class Person {
 
 <br />
 
-Nếu chúng ta khởi tạo instance từ class **Person** thì sẽ báo lỗi:
+### Một số đặc điểm của abstract class:
+
+- Lớp trừu tượng có thể có các method abstract hoặc non-abtract.
+- Lớp trừu tượng có thể khai báo 0, 1 hoặc nhiều abstract method bên trong.
+- Không thể khởi tạo 1 đối tượng trực tiếp từ một abstract class.
+- Một lớp kế thừa từ một abstract class (subclass – lớp con) không cần phải implement non-abstract methods, nhưng bắt buộc phải override những abstract methods. Trừ khi subclass cũng là abstract class.
+
+Ví dụ nếu chúng ta khởi tạo instance từ class **Person** thì sẽ báo lỗi:
 
 ```java
 public class Main {
@@ -55,6 +62,12 @@ public class Main {
     }
 }
 ```
+
+<br />
+
+## II. Abstract method (Phương thức trừu tượng)
+
+**Các phương thức trừu tượng** là chỉ định nghĩa mà không có chương trình bên trong, lớp con kế thừa phải bắt buộc override nó lại để sử dụng. Phương thức trừu tượng có ý nghĩa định nghĩa phương thức bắt buộc phải có trong lớp con kế thừa.
 
 <br />
 
