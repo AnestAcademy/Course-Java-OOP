@@ -92,8 +92,6 @@ Với yêu cầu trên, chúng ta sẽ tạo một lớp trừu tượng **Shape
 ```java
 public abstract class Shape {
 
-    private String color = "red";
-     
     public Shape() {         
     }
      
