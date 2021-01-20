@@ -42,12 +42,16 @@ public abstract class Person {
 }
 ```
 
+<br />
+
 ### Một số đặc điểm của abstract class:
 
 - Lớp trừu tượng có thể có các method abstract hoặc non-abtract.
 - Lớp trừu tượng có thể khai báo 0, 1 hoặc nhiều abstract method bên trong.
 - Không thể khởi tạo 1 đối tượng trực tiếp từ một abstract class.
 - Một lớp kế thừa từ một abstract class (subclass – lớp con) không cần phải implement non-abstract methods, nhưng bắt buộc phải override những abstract methods. Trừ khi subclass cũng là abstract class.
+
+<br />
 
 Ví dụ nếu chúng ta khởi tạo instance từ class **Person** thì sẽ báo lỗi:
 
