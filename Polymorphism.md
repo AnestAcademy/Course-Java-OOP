@@ -33,8 +33,9 @@ Trong Java, chúng ta sử dụng nạp chồng phương thức (method overload
 
 ## II. Override (ghi đè)
 
-- **Override** là một tính năng cho phép một lớp con cung cấp một triển khai cụ thể của phương thức đã được cung cấp bởi một trong các lớp cha của nó. Nói dễ hiểu hơn, nếu lớp con có một hoặc nhiều phương thức giống với một trong các lớp cha của nó, thì đó là ghi đè phương thức.
-- **Override** được sử dụng để thu được tính đa hình tại runtime.
+**Override** là một tính năng cho phép một lớp con cung cấp một triển khai cụ thể của phương thức đã được cung cấp bởi một trong các lớp cha của nó. Nói dễ hiểu hơn, nếu lớp con có một hoặc nhiều phương thức giống với một trong các lớp cha của nó, thì đó là ghi đè phương thức.
+
+**Override** được sử dụng để thu được tính đa hình tại runtime.
 
 ### Các quy tắc cho việc Override
 
