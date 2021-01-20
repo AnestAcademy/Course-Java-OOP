@@ -69,7 +69,58 @@ public class Main {
 
 ## II. Abstract method (Phương thức trừu tượng)
 
-**Các phương thức trừu tượng** là chỉ định nghĩa mà không có chương trình bên trong, lớp con kế thừa phải bắt buộc override nó lại để sử dụng. Phương thức trừu tượng có ý nghĩa định nghĩa phương thức bắt buộc phải có trong lớp con kế thừa.
+Một phương thức được khai báo là abstract được gọi là phương thức trừu tượng (abstract method).
+
+Các phương thức trừu tượng chỉ được định nghĩa mà không có chương trình bên trong (không có code bên trong hàm), lớp con kế thừa bắt buộc phải **override** nó lại để sử dụng. Phương thức trừu tượng có ý nghĩa định nghĩa phương thức bắt buộc phải có trong lớp con kế thừa vì khi kế thừa lớp con bắt buộc phải **override** lại phương thức đó.
+
+Ví dụ: 
+```java
+public abstract void display();
+```
+
+<br />
+
+## III. Ví dụ về Abstract class và Abstract method
+
+Ví dụ: Viết chương trình vẽ một hình bất kỳ sao cho cách sử dụng - vẽ là giống nhau, bất kể đó là hình gì với màu đỏ. Hình đó có thể là hình chữ nhật (rectangle), hình tròn (circle), tam giác (triangle)...
+
+Với yêu cầu trên, chúng ta sẽ tạo một lớp trừu tượng **Shape**. Lớp này cung cấp một phương thức trừu tượng `draw()`, phương thức này để đảm bảo rằng:
+- Vì mỗi hình sẽ có cách vẽ cụ thể riêng nên chúng ta sẽ chỉ cần định nghĩa phương thức `draw()` mà chưa cần triển khai vẽ như thế nào => `draw()` sẽ là abstract method
+- Tất cả các hình đều có cùng cách sử dụng (draw) vì các class con sẽ kế thừa class **Shape**, nên cũng sẽ kế thừa method `draw()`
+
+**Shape.java**
+```java
+public abstract class Shape {
+
+    private String color = "red";
+     
+    public Shape() {         
+    }
+     
+    public abstract void draw();
+}
+```
+
+Ngoài ra, chúng ta cũng cần có phương thức không trừu tượng `getColor()` để cung cấp màu sử dụng chung cho tất cả các hình (vì yêu cầu tất cả cách hình có màu đỏ nên method này có thể triển khai luôn được code). 
+
+**Shape.java**
+```java
+public abstract class Shape {
+
+    private String color = "red";
+     
+    public Shape() {         
+    }
+    
+    public abstract void draw();
+     
+    public String getColor() {
+        return color;
+    }
+}
+```
+
+Tiếp theo, tôi tạo 2 lớp Rectangle và Circle kế thừa từ lớp Shape, 2 lớp này có những cách xử lý draw khác nhau. Cuối cùng, tôi tạo class ShapeApp, gọi phương thức draw để vẽ hình theo yêu cầu.
 
 <br />
 
