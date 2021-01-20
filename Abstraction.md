@@ -173,6 +173,44 @@ Draw red circle
 
 <br />
 
+## IV. Interface
+
+Trong Java, Interface (giao diện) là một kiểu dữ liệu tham chiếu tương tự như Class (lớp) nhưng chỉ có thể chứa hằng số và tên các abstract methods (phương thức trừu tượng).
+
+Một lớp mô tả các thuộc tính và hành vi của một đối tượng. Một interface chứa các hành vi mà một class triển khai.
+
+### Đặc điểm của Interface
+
+- Interface là một kỹ thuật để thu được tính trừu tượng hoàn toàn và **đa kế thừa** trong Java.
+- Interface luôn luôn có modifier là: **_public interface_**, cho dù bạn có khai báo rõ hay không.
+- Nếu có các trường (field) thì chúng đều là: **_public static final_**, cho dù bạn có khai báo rõ hay không.
+- Các phương thức trong interface đều là abstract methods (phương thức trừu tượng), nghĩa là không có thân hàm, và đều có modifier là: **_public abstract_**, cho dù bạn có khai báo rõ hay không.
+- Interface không có hàm khởi tạo (constructor).
+- Trừ khi một lớp triển khai interface là lớp trừu tượng abstract, còn lại tất cả các phương thức của interface bắt buộc phải **override** trong class triển khai (implements) nó.
+
+<br />
+
+> Java Compiler thêm từ khóa public abstract trước phương thức của interface và các từ khóa public static final trước các thành viên dữ liệu.
+
+<br />
+
+### Một interface tương tự với một class bởi những điểm sau đây:
+
+- Một interface được viết trong một file với định dạng `.java`, với tên của interface giống tên của file.
+- Bytecode của interface được lưu trong file có định dạng `.class`.
+- Khai báo interface trong một **package**, những file bytecode tương ứng cũng có cấu trúc thư mục có cùng tên package.
+
+### Một interface khác với một class ở một số điểm sau đây:
+
+- Bạn không thể khởi tạo một interface.
+- Một interface không chứa bất cứ hàm Contructor nào.
+- Tất cả các phương thức của interface đều là abstract.
+- Một interface không thể chứa một trường (field) nào trừ các trường **_static final_**.
+- Một interface không thể kế thừa từ lớp, nó được triển khai (implements) bởi một lớp.
+- Một interface có thể kế thừa từ nhiều interface khác.
+
+<br />
+
 ##  
 
 © Copyright
