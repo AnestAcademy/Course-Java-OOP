@@ -42,8 +42,6 @@ public abstract class Person {
 }
 ```
 
-<br />
-
 ### Một số đặc điểm của abstract class:
 
 - Lớp trừu tượng có thể có các method abstract hoặc non-abtract.
