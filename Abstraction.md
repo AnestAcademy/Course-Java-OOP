@@ -164,7 +164,7 @@ public class ShapeApp {
 }
 ```
 
-Kết quả nhận dược:
+Kết quả nhận được:
 ```java
 Draw red rectangle
 ---
