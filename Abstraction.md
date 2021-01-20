@@ -231,7 +231,7 @@ public interface Shape {
 
 <br />
 
-Vì dùng Interfave nên chúng ta sẽ kế thừa bằng từ khóa **implements** (triển khai), không dùng từ khóa **extends**.
+Vì dùng Interface nên chúng ta sẽ kế thừa bằng từ khóa **implements** (triển khai), không dùng từ khóa **extends**.
 
 **Rectangle.java**
 ```java
