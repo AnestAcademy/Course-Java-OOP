@@ -65,13 +65,27 @@ public class SampleClass {
 
 ## III. Final methods
 
-Một phương thức, được khai báo với từ khóa **final** thì không thể bị ghi đè hoặc ẩn bởi các lớp con.
+Nếu một phương thức được khai báo với từ khóa **final** thì không thể bị ghi đè hoặc ẩn bởi các lớp con.
+
+```java
+public class A {
+
+    public final void display() {}
+}
+```
+
+```java
+public class B extends A {
+
+    public void display() {}  //throws an error
+}
+```
 
 <br />
 
 ## IV. Final classes
 
-Một class được khai báo là **final** thì nó không thể được kế thừa.
+Nếu một class được khai báo là **final** thì nó không thể được kế thừa.
 
 ```java
 public final class FinalClass {
