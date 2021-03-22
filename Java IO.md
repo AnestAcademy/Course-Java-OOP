@@ -20,9 +20,30 @@ Trong java, 3 stream được tạo cho chúng ta một cách tự động. Tấ
 
 ## I. OutputStream
 
+Ứng dụng Java sử dụng một output stream để ghi dữ liệu đến đích, nó có thể là một tệp tin, một mảng, thiết bị ngoại vi hoặc socket.
+
+Lớp OutputStream là một lớp trừu tượng. Nó là super class của tất cả các lớp đại diện cho một output stream của các byte. Một output stream chấp nhận ouput các byte và gửi chúng đến một nơi có thể chứa.
+
+### Các phương thức của lớp OutputStream
+| No | Method | Description |
+|  1 | public void write(int)throws IOException |	Được sử dụng để ghi một byte đến output stream hiện tại. |
+|  2 | public void write(byte[])throws IOException | Được sử dụng để ghi một mảng các byte đến output stream hiện tại. |
+|  3 | public void flush()throws IOException | Flush output stream hiện tại. |
+|  4 | public void close()throws IOException | Được sử dụng để đóng output stream hiện tại. |
+
 <br />
 
 ## II. InputStream
+
+Ứng dụng Java sử dụng một input stream để đọc dữ liệu từ một nguồn, nó có thể là một tệp tin, một mảng, thiết bị ngoại vi hoặc socket.
+
+Lớp InputStream là một lớp trừu tượng. Nó là super class của tất cả các lớp đại diện cho một input stream của các byte.
+
+### Các phương thức của lớp InputStream
+| No | Method | Description |
+|  1 | public abstract int read()throws IOException |	Đọc byte kế tiếp của dữ liệu từ input stream. Nó trả về -1 khi đọc đến vị trí cuối tập tin. |
+|  2 | public int available()throws IOException |	Trả về một ước tính về số byte có thể đọc được từ input stream hiện tại. |
+|  3 | public void close()throws IOException | Được sử dụng để đóng input stream hiện tại. |
 
 <br />
 
