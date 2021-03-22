@@ -173,7 +173,7 @@
         
            ```java
            @Override
-           public void remove(String id) {
+           public boolean remove(String id) {
            }
            ```
             
@@ -181,7 +181,7 @@
         
            ```java
            @Override
-           public void update(String id, Student obj) {
+           public boolean update(String id, Student obj) {
            }
            ```
                              
@@ -189,7 +189,7 @@
         
            ```java
            @Override
-           public void List<Student> search(String text) {
+           public List<Student> search(String text) {
            }
            ```
            
